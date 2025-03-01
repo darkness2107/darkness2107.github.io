@@ -1,0 +1,101 @@
+*{margin: 0; padding: 0; box-sizing: border-box;}
+
+body{
+background: url(bg.jpg) no-repeat center / cover;
+overflow: hidden;
+user-select: none;
+}
+
+.box{
+    height: 100vh;
+}
+
+.box .mek{
+    width: 100%;
+    height: 50%;
+    display: flex;
+}
+
+.box .mek .item{
+    padding-left: 100px;
+    translate: 0 10rem;
+    transition: .5s;
+    scale: 1;
+}
+
+.box .erku{
+    width: 100%;
+    height: 50%;
+    display: flex;
+}
+
+.box .erku .item{
+    padding: 100px;
+    transition: .5s;
+    scale: 1;
+}
+
+.box .mark{
+    width: 100%;
+    height: 50%;
+}
+
+.box .kram{
+    width: 100%;
+    height: 50%;
+}
+
+.box #cel{
+    position: absolute;
+}
+
+
+.box .verj{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    visibility: hidden;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(3px);
+    background-color: rgba(0, 0, 0, 0.637);
+    color: aqua;
+    transition: .5s;
+}
+
+.box .verj h1 {
+    padding-bottom: 10px;
+    outline: 0;
+    display: block;
+    text-align: center;
+    translate: 300px;
+    letter-spacing: 10px;
+    font: 5rem thick;
+    text-shadow: 1px 8px blue;
+}
+
+.box .verj .kojak{
+    width: 500px;
+    height: 100px;
+    display: flex;
+    position: relative;
+    top: 100px;
+    right: 100px;
+}
+.box .verj .kojak button{
+    width: 100px;
+    height: 50px;
+    background: rgb(207, 255, 192);
+    appearance: none;
+    border: none;
+    border-radius: 30%;
+    font: 2rem bold sans-serif;
+    color: red;
+    cursor: pointer;
+}
+
+
+
+
