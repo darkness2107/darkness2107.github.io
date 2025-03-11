@@ -1,0 +1,103 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: black;
+    overflow: hidden;
+    margin: 0px;
+    height: 100vh;
+}
+
+.container {
+    font-size: 10px;
+    width: 640px;
+    height: 640px;
+    position: relative;
+}
+
+.sun {
+    position: absolute;
+    top: 240px;
+    left: 240px;
+    width: 160px;
+    height: 160px;
+    background: linear-gradient(#ffe, #ffa500);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    box-shadow: 0px 0px 48px white;
+}
+
+.earth, .moon {
+    position: absolute;
+    border-style: solid;
+    border-color: #fff transparent transparent transparent;
+    border-width: 1.6px 1.6px 0px 0px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.earth {
+    top: 80px;
+    left: 80px;
+    width: 480px;
+    height: 480px;
+    animation: rotate 36.5s linear infinite;
+    -webkit-animation: rotate 36.5s linear infinite;
+}
+
+.moon{
+    top: 0px;
+    right: 0px;
+    height: 128px;
+    width: 128px;
+    animation: rotate 2.7s linear infinite;
+    -webkit-animation: rotate 2.7s linear infinite;
+}
+
+span {
+    color: yellow;
+    position: relative;
+}
+
+.earth::before,
+.moon::before {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.earth::before {
+    top: 44.8px;
+    right: 44.8px;
+    width: 48px;
+    height: 48px;
+    background: linear-gradient(#008000, #00ffff, #fff);
+}
+
+.moon::before {
+    top: 12.8px;
+    right: 3.2px;
+    width: 19.2px;
+    height: 19.2px;
+    background: linear-gradient(#c0c0c0, #777);
+}
+
+@keyframes rotate {
+    to {
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+}
+}
