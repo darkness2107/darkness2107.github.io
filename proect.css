@@ -1,0 +1,1343 @@
+*{margin: 0; padding: 0; box-sizing: border-box;}
+
+.box{
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    background-color: black;
+    color: white;
+    position: relative;
+}
+
+
+.box .logo {
+    width: 5%;
+    height: 50px;
+    display: inline-block;
+    justify-content: start;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+
+.bar{
+    display: flex;
+    width: 800px;
+    justify-content: space-between;
+}
+
+.bar .barerku{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 600px;
+    height: 500px;
+    translate: 0 -2rem;
+    z-index: 1;
+}
+
+.bar .barerku > p {
+    margin-bottom: 15px;
+}
+
+.bar .barmek > p {
+    margin-bottom: 15px;
+}
+
+.box .logo:hover .barerku{
+    display: block;
+    background-color: #0000008d;
+    color: antiquewhite;
+    font: 20px sans-serif; 
+    padding: 50px;
+    translate: -250px;
+}
+
+.bar .barmek {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 600px;
+    height: 500px;
+    z-index: 1;
+}
+
+.box .logo:hover .barmek{
+    display: block;
+    left: 400px;
+    background-color: transparent;
+    color: antiquewhite;
+    font: 20px sans-serif; 
+    padding: 50px;
+    translate: -400px;
+
+}
+
+.bar a {
+    color: white;
+    text-decoration-line: none;
+    -moz-text-decoration-line: none;
+}
+
+.bar a:hover{
+    background-color: rgba(0, 0, 0, 0.138);
+}
+
+.overview{
+    font: 1rem sans-serif;
+    position: relative;
+    top: 17px;
+}
+
+.overview a {
+    text-decoration-line: none;
+    -moz-text-decoration-line: none;
+    color: antiquewhite;
+}
+
+.overview a:hover{
+    color: rgba(62, 207, 220, 0.764);
+}
+
+.over{
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.484);
+    color: rgba(24, 190, 215, 0.834);
+    width: 120px;
+    height: auto;
+    top: 20px;
+    translate: -35px;
+    text-align: center;
+    z-index: 1;
+}
+
+.over > p {
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.over > p:hover {
+    background-color: rgba(0, 0, 0, 0.348);
+}
+
+.overview:hover .over {
+    display: block;
+}
+
+.uses {
+    font: 1rem sans-serif;
+    position: relative;
+    top: 17px;
+}
+
+.uses a {
+    text-decoration-line: none;
+    -moz-text-decoration-line: none;
+    color: antiquewhite;
+}
+
+.uses a:hover{
+    color: rgba(62, 207, 220, 0.764);
+}
+
+.us {
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.532);
+    color: rgba(24, 190, 215, 0.834);
+    width: 200px;
+    height: auto;
+    top: 20px;
+    translate: -80px;
+    text-align: center;
+    z-index: 1;
+}
+
+.uses:hover .us {
+    display: block;
+}
+
+.us > p {
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.us > p:hover {
+    background-color: rgba(0, 0, 0, 0.348);
+}
+
+.news{
+    font: 1rem sans-serif;
+    position: relative;
+    top: 17px;
+}
+
+.news a {
+    text-decoration-line: none;
+    -moz-text-decoration-line: none;
+    color: antiquewhite;
+}
+
+.news a {
+    text-decoration-line: none;
+    -moz-text-decoration-line: none;
+    color: antiquewhite;
+}
+
+.news a:hover{
+    color: rgba(62, 207, 220, 0.764);
+}
+
+.formus {
+    font: 1rem sans-serif;
+    position: relative;
+    top: 17px;
+}
+
+.formus a {
+    text-decoration-line: none;
+    -moz-text-decoration-line: none;
+    color: antiquewhite;
+}
+
+.formus a {
+    text-decoration-line: none;
+    -moz-text-decoration-line: none;
+    color: antiquewhite;
+}
+
+.formus a:hover{
+    color: rgba(62, 207, 220, 0.764);
+}
+
+.docum {
+    font: 1rem sans-serif;
+    position: relative;
+    top: 17px;
+}
+
+.docum a {
+    text-decoration-line: none;
+    -moz-text-decoration-line: none;
+    color: antiquewhite;
+}
+
+.docum a {
+    text-decoration-line: none;
+    -moz-text-decoration-line: none;
+    color: antiquewhite;
+}
+
+.docum a:hover{
+    color: rgba(62, 207, 220, 0.764);
+}
+
+.learning {
+    font: 1rem sans-serif;
+    position: relative;
+    top: 17px;
+}
+
+.learning a {
+    text-decoration-line: none;
+    -moz-text-decoration-line: none;
+    color: antiquewhite;
+}
+
+.learning a:hover{
+    color: rgba(62, 207, 220, 0.764);
+}
+
+.learn {
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.532);
+    color: rgba(24, 190, 215, 0.834);
+    width: 150px;
+    height: auto;
+    top: 20px;
+    translate: -40px;
+    text-align: center;
+    z-index: 1;
+}
+
+.learning:hover .learn {
+    display: block;
+}
+
+.learn > p {
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.learn > p:hover {
+    background-color: rgba(0, 0, 0, 0.348);
+}
+
+.connect {
+    font: 1rem sans-serif;
+    position: relative;
+    top: 17px;
+}
+
+.connect a {
+    text-decoration-line: none;
+    -moz-text-decoration-line: none;
+    color: antiquewhite;
+}
+
+.connect a:hover{
+    color: rgba(62, 207, 220, 0.764);
+}
+
+.con {
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.532);
+    color: rgba(24, 190, 215, 0.834);
+    width: 230px;
+    height: auto;
+    top: 20px;
+    translate: -90px;
+    text-align: center;
+    z-index: 1;
+}
+
+.connect:hover .con {
+    display: block;
+}
+
+.con > p {
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.con > p:hover {
+    background-color: rgba(0, 0, 0, 0.348);
+}
+
+.market {
+    font: 1rem sans-serif;
+    position: relative;
+    top: 17px;
+}
+
+.market a {
+    text-decoration-line: none;
+    -moz-text-decoration-line: none;
+    color: antiquewhite;
+}
+
+.market a:hover{
+    color: rgba(62, 207, 220, 0.764);
+}
+
+.mark {
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.532);
+    color: rgba(24, 190, 215, 0.834);
+    width: 200px;
+    height: auto;
+    top: 20px;
+    text-align: center;
+    translate: -60px;
+    z-index: 1;
+}
+
+.market:hover .mark {
+    display: block;
+}
+
+.mark > p {
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.mark > p:hover {
+    background-color: rgba(0, 0, 0, 0.348);
+}
+
+.anim {
+    width: 100%;
+    height: 150vh;
+    background: rgba(0, 0, 0, 0.463);
+}
+
+.anim video{
+    object-fit: cover;
+    height: 120vh;
+    width: 130rem;
+}
+
+svg{
+    visibility: visible;
+    position: absolute;
+    left: 40%;
+    top: 30%;
+    transition: 10s;
+    -webkit-transition: 10s;
+    -moz-transition: 10s;
+    -ms-transition: 10s;
+    -o-transition: 10s;
+}
+
+.anim h2 {
+    visibility: visible;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 37%;
+    font: 5rem bold sans-serif;
+    z-index: 2;
+    transition: 10s;
+    -webkit-transition: 10s;
+    -moz-transition: 10s;
+    -ms-transition: 10s;
+    -o-transition: 10s;
+}
+
+.anim h1 {
+    opacity: 0;
+    width: 1000px;
+    position: absolute;
+    top: 40%;
+    left: 29%;
+    font: 4rem sans-serif;
+    font-weight: 600;
+    z-index: 1;
+}
+
+.anim img {
+    visibility: visible;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    opacity: 1;
+    backdrop-filter: blur(3px);
+    transition: 10s;
+    -webkit-transition: 10s;
+    -moz-transition: 10s;
+    -ms-transition: 10s;
+    -o-transition: 10s;
+}
+
+.nav {
+    width: 100%;
+    height: 80px;
+    background-color: rgba(0, 0, 0, 0.476);
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    position: sticky;
+    z-index: 10;
+    top: 0;
+    align-items: center;
+}
+
+.nav  a {
+    text-decoration-line: none;
+    -moz-text-decoration-line: none;
+    color: aqua;
+}
+
+.nav .item1:hover .item2 > span {
+    color: blanchedalmond;
+}
+
+.nav .item1{
+    width: auto;
+    height: auto;
+}
+.nav .item2{
+    width: auto;
+    height: auto;
+}
+.nav .item3{
+    width: auto;
+    height: auto;
+}
+.nav .item4{
+    width: auto;
+    height: auto;
+}
+.nav .item5{
+     width: auto;
+    height: auto;
+}
+
+.nav a:active {
+    color: burlywood;
+}
+
+.main {
+    width: 100%;
+    display: flex;
+    gap: 50px;
+}
+
+.aj{
+    display: block;
+    margin: 50px;
+    padding: 5px;
+    width: 50%;
+}
+
+.glux1 {
+    width: 500px;
+    height: 400px;
+    
+}
+
+.aj .glux1 p span {
+    color: blueviolet;
+}
+
+.aj .glux1 h2 {
+    font-size: 3rem;
+}
+
+.aj .shenq {
+    height: 730px;
+}
+
+.aj .shenq h2 {
+    font-size: 2rem;
+    font-style: bold;
+}
+
+.aj .shenq p {
+    width: 810px;
+    font-size: 20px;
+}
+
+.aj .gic .text {
+    translate: 180px;
+}
+
+.aj .gic .text h2 {
+    font-size: 2.5rem;
+}
+
+.aj .gic .text p {
+    font-size: x-large;
+    margin-bottom: 10px;
+}
+
+.aj .gic .text p a {
+    text-decoration-line: none;
+    -moz-text-decoration-line: none;
+}
+
+.aj .gic .text p a:hover {
+    color: #f9f9f9;
+}
+
+.main .dzax {
+    display: block;
+    margin: 50px;
+    padding: 5px;
+    width: 50%;
+}
+
+.dzax .svetafor {
+    height: 1100px;
+}
+
+.dzax .svetafor h2 {
+    font-size: 2rem;
+    font-style: bold;
+}
+
+.dzax .svetafor p {
+    font-size: 20px;
+    width: 700px;
+}
+
+.dzax .robot h2 {
+    font-size: 2rem;
+    font-style: bold;
+}
+
+.dzax .robot p {
+    font-size: 20px;
+    width: 700px;
+    width: 580px;
+}
+
+.uj {
+    margin-bottom: 15rem;
+}
+.uj h2 {
+    text-align: center;
+    font-family: "Inter Tight", arial;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 58px;
+    margin-bottom: 100px;
+}
+.uj .drakon {
+    width: 100%;
+    height: 100vh;
+}
+.uj .drakon .scal {
+    height: 5px;
+}
+.uj .drakon .scal1 {
+    height: 5px;
+    translate: 0 20vh;
+    z-index: 1;
+}
+ p {
+    text-align: center;
+    font: 1rem sans-serif;
+    color: antiquewhite;
+}
+.texter {
+    height: auto;
+    width: auto;
+    display: block;
+    text-align: center;
+}
+.texter p {
+    translate: 90%;
+    width: 670px;
+    margin: 3rem;
+    margin: 10px;
+}
+.texter .kojakner button {
+    width: 155px;
+    height: 55px;
+    border: 3px solid rgb(201, 88, 201);
+    margin: 1rem;
+    background-color: transparent;
+    cursor: pointer;
+}
+.texter .kojakner button a {
+    color: white;
+    text-decoration-line: none;
+    -moz-text-decoration-line: none;
+}
+.texter .kojakner button:hover {
+    box-shadow: 0 0 30px rgb(201, 88, 201);
+}
+
+.erku {
+    height: auto;
+    width: auto;
+    display: block;
+    text-align: center;
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+}
+.erku p span {
+    font-family: Inter, arial;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 4px;
+    color: rgb(182, 101, 233);
+    margin-bottom: 1rem;
+}
+.erku h2 {
+    font-family: "Inter Tight", arial;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 58px;
+    letter-spacing: -0.5px;
+    margin: 1rem;
+}
+.erku .kojakner2 button {
+    width: 155px;
+    height: 55px;
+    border: 3px solid rgb(201, 88, 201);
+    margin: 1rem;
+    background-color: transparent;
+    cursor: pointer;
+}
+.erku .kojakner2 button a {
+    color: white;
+    text-decoration-line: none;
+    -moz-text-decoration-line: none;
+}
+.erku .kojakner2 button:hover {
+    box-shadow: 0 0 30px rgb(201, 88, 201);
+}
+
+.massiv {
+    display: flex;
+    gap: 8rem;
+}
+.massiv .hayt span {
+    width: 330px;
+    height: 30px;
+    background-color: #C776F9;
+    box-shadow: 0 0 30px #C776F9;
+    color: black;
+    padding: 8px;
+    margin-left: 12rem;
+    font-weight: 900;
+}
+.massiv .hayt h2 {
+    translate: 12rem;
+    font-size: xx-large;
+}
+.massiv .patker {
+    height: 570px;
+    position: relative;
+    overflow: hidden;
+}
+
+.divan {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin: 100px 240px ;
+    gap: 5rem;
+}
+.divanitext{
+    display: block;
+    line-height: 15px;
+}
+.divan .divanitext span {
+    width: 80px;
+    height: 30px;
+    background-color: #C776F9;
+    box-shadow: 0 0 30px #C776F9;
+    color: black;
+    padding: 8px;
+    font-weight: 900;
+}
+.divan .divanitext h2 {
+    font-family: "Inter Tight", arial;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 58px;
+    letter-spacing: -0.5px;
+    margin: 1rem;
+}
+
+.atom {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin: 100px 240px; 
+    gap: 5rem;
+}
+.atomitext{
+    display: block;
+}
+.atom .atomitext span {
+    width: 300px;
+    height: 30px;
+    background-color: #C776F9;
+    box-shadow: 0 0 30px #C776F9;
+    color: black;
+    padding: 8px;
+    font-weight: 900;
+}
+.atom .atomitext h2 {
+    font-family: "Inter Tight", arial;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 58px;
+    letter-spacing: -0.5px;
+    margin: 1.5rem;
+    translate: -21px;
+}
+
+.texanq {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin: 100px 240px ;
+    gap: 5rem;
+}
+.texanqitext {
+    display: block;
+    line-height: 15px;
+}
+.texanq .texanqitext span {
+    width: 80px;
+    height: 30px;
+    background-color: #C776F9;
+    box-shadow: 0 0 30px #C776F9;
+    color: black;
+    padding: 8px;
+    font-weight: 900;
+}
+.texanq .texanqitext h2 {
+    font-family: "Inter Tight", arial;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 58px;
+    letter-spacing: -0.5px;
+    margin: 1rem;
+    translate: -17px;
+}
+
+.rob {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin: 100px 240px; 
+    gap: 5rem;
+}
+.robitext{
+    display: block;
+    line-height: 15px;
+}
+.rob .robitext span {
+    width: 300px;
+    height: 30px;
+    background-color: #C776F9;
+    box-shadow: 0 0 30px #C776F9;
+    color: black;
+    padding: 8px;
+    font-weight: 900;
+}
+.rob .robitext h2 {
+    font-family: "Inter Tight", arial;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 58px;
+    letter-spacing: -0.5px;
+    margin: 1.5rem;
+    translate: -21px;
+}
+
+.dasht {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin: 100px 240px ;
+    gap: 5rem;
+}
+.dashtitext {
+    display: block;
+    line-height: 15px;
+}
+.dasht .dashtitext span {
+    width: 80px;
+    height: 30px;
+    background-color: #C776F9;
+    box-shadow: 0 0 30px #C776F9;
+    color: black;
+    padding: 8px;
+    font-weight: 900;
+}
+.dasht .dashtitext h2 {
+    font-family: "Inter Tight", arial;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 58px;
+    letter-spacing: -0.5px;
+    margin: 1rem;
+    translate: -17px;
+}
+
+.grafik {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin: 100px 240px; 
+    gap: 5rem;
+}
+.grafikitext {
+    display: block;
+    line-height: 15px;
+}
+.grafik .grafikitext span {
+    width: 300px;
+    height: 30px;
+    background-color: #C776F9;
+    box-shadow: 0 0 30px #C776F9;
+    color: black;
+    padding: 8px;
+    font-weight: 900;
+}
+.grafik .grafikitext h2 {
+    font-family: "Inter Tight", arial;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 58px;
+    letter-spacing: -0.5px;
+    margin: 1.5rem;
+    translate: -21px;
+}
+
+.errord {
+    width: 100%;
+    height: 100vh;
+}
+.errord .errorditext {
+    text-align: center;
+    line-height: 4rem;
+    margin: 5rem;
+}
+.errord .errorditext {
+    font-family: "Inter Tight", arial;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+    letter-spacing: -0.5px;
+}
+.errord .errorditext span a {
+    color: #B665E9;
+    text-decoration-line: none;
+    -moz-text-decoration-line: none;
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    padding-bottom: 2px;
+    line-height: initial;
+    background-image: radial-gradient(100% 185.14% at 100% 100%, rgb(199, 118, 249) 0%, rgb(199, 118, 249) 100%);
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+.errord .errorditext span:hover a {
+    background-size: 100% 2px;
+}
+.errord .errorditext span {
+    width: auto;
+    height: auto;
+}
+
+.errord .nkarnerisharan {
+    display: flex;
+    justify-content: center;
+    margin: 3rem;
+    gap: 2rem;
+    line-height: 2rem;
+}
+
+.errord .nkarnerisharan .nkar1 {
+    height: 50vh;
+}
+.errord .nkarnerisharan .nkar2 {
+    height: 50vh;
+}
+.errord .nkarnerisharan .nkar3 {
+    height: 50vh;
+}
+.errord .nkarnerisharan p span a {
+    color: #B665E9;
+    text-decoration-line: none;
+    -moz-text-decoration-line: none;
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    padding-bottom: 2px;
+    line-height: initial;
+    background-image: radial-gradient(100% 185.14% at 100% 100%, rgb(199, 118, 249) 0%, rgb(199, 118, 249) 100%);
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+.errord .nkarnerisharan p span a:hover {
+    background-size: 100% 2px;
+}
+.errord .nkarnerisharan a {
+    color: white;
+    font-size: 1rem;
+    text-underline-offset: 5px;
+    text-decoration-color: #B665E9;
+    -moz-text-decoration-color: #B665E9;
+    text-decoration-thickness: 2px;
+}
+.errord .nkarnerisharan img {
+    width: 460px;
+    height: 260px;
+    object-fit: cover;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+.errord .nkarnerisharan img:hover {
+    scale: -1;
+    width: 460px;
+    height: 260px;
+    object-fit: cover;
+}
+
+.chorrord {
+    width: 100%;
+    height: 80vh;
+    margin-top: 8rem;
+    background: #B665E9;
+    color: black;
+    display: flex;
+    justify-content: center;
+    padding: 90px 240px;
+    gap: 7rem;
+    margin-bottom: 5rem;
+}
+.chorrord .get {
+    display: block;
+}
+.chorrord .get p {
+    font: sans-serif;
+    letter-spacing: 6px;
+    color: black;
+    font-size: larger;
+    text-align: left;
+    font-weight: 700;
+}
+.chorrord .get h2 {
+    font: sans-serif;
+    font-size: 3rem;
+    font-weight: 900;
+}
+.chorrord .getitext {
+    width: 865px;
+    height: 495px;
+    display: flex;
+    justify-content: space-evenly;
+    translate: 0 4rem;
+}
+.chorrord .getitext p {
+    color: black;
+    text-align: left;
+    line-height: 2rem;
+}
+.chorrord .getitext h3 {
+    font-size: xx-large;
+    margin-bottom: 1rem; 
+}
+.chorrord .getitext .getmek {
+    width: 410px;
+    height: 495px;
+    border: 4px solid white;
+    padding: 3rem;
+    color: black;
+    text-align: left;
+    line-height: 2rem;
+    cursor: pointer;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+.chorrord .getitext .geterku {
+    width: 410px;
+    height: 495px;
+    border: 4px solid white;
+    padding: 3rem;
+    color: black;
+    text-align: left;
+    line-height: 2rem;
+    cursor: pointer;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+.chorrord .getitext .getmek:hover {
+    background-color: white;
+}
+.chorrord .getitext .geterku:hover {
+    background-color: white;
+}
+
+
+.hingerord {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin: 5rem 5rem 2rem 5rem;
+    text-align: left;
+}
+.hingerord .hing {
+    width: 50%;
+    height: 100%;
+    line-height: 3rem;
+}
+.hingerord .hingitext {
+    width: 690px;
+    height: 295px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+.hingerord .hingitext .hingmek{
+    width: 305px;
+    height: 295px;
+    padding: 25px;
+    border: 3px solid #B665E9;
+    text-align: left;
+    cursor: pointer;
+}
+.hingerord .hingitext .hingerku {
+    width: 305px;
+    height: 295px;
+    padding: 25px;
+    border: 3px solid #B665E9;
+    text-align: left;
+    line-height: 2rem;
+    cursor: pointer;
+}
+.hingerord .hingitext :is(.hingmek, .hingerku):hover {
+    background-color: #B665E9;
+}
+.footer {
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 170px;
+}
+.footer a {
+    color: #f9f9f9;
+    text-underline-offset: 5px;
+    text-decoration-color: #B665E9;
+    -moz-text-decoration-color: #B665E9;
+}
+.hr {
+    width: 82%;
+    height: 10px;
+    margin: 0 200px;
+    translate: -50px;
+}
+
+.texekutyunner {
+    width: 100%;
+    height: auto;
+    margin: 50px 240px 50px 200px;
+    display: block;
+}
+.texekutyunner .payl {
+    width: 100%;
+    height: auto;
+    display: flex;
+    gap: 70px;
+    overflow: hidden;
+}
+.texekutyunner .payl h2:hover {
+    color: #B665E9;
+}
+.texekutyunner .paylmek {
+    width: 100%;
+    height: auto;
+    display: flex;
+    gap: 70px;
+    overflow: hidden;
+}
+
+.epicgame {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 7rem 13rem;
+}
+.epicgame .epicgametext {
+    display: block;
+    align-items: end;
+    width: 300px;
+    height: auto;
+    line-height: 5rem;
+}
+.epicgame .epicgametext button {
+    appearance: none;
+    width: 190px;
+    height: 50px;
+    background-color: transparent;
+    color: white;
+    border: 2px solid #B665E9;
+    cursor: pointer;
+}
+.epicgame .epicgametext button:hover {
+    box-shadow: 0 0 30px #B665E9;
+}
+.search {
+    width: 100%;
+    height: auto;
+    padding: 3rem 12rem;
+    margin-bottom: 5rem;
+}
+.search .input {
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.09);
+    margin-bottom: 4rem;
+}
+.search .input input {
+    width: 100%;
+    background-color: transparent;
+    height: 4rem;
+    border: none;
+    text-indent: 50px;
+    font-size: x-large;
+    translate: -10px;
+    color: #f9f9f9;
+}
+.search .input i {
+    translate: 1.7rem 1.5rem;
+    width: 1rem;
+    height: 1rem;
+}
+.search .texter {
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
+} 
+.search .texter a {
+    color: #f9f9f9;
+    text-underline-offset: 5px;
+    text-decoration-color: #C776F9;
+    -moz-text-decoration-color: #C776F9;
+}
+.search .menu {
+    display: flex;
+}
+.search .menu .gluxner {
+    cursor: pointer;
+    display: block;
+}
+.search .menu .gluxner h2 {
+    font-family: Inter, arial;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 34px;
+    letter-spacing: 0px;
+    display: flex;
+    justify-content: space-between;
+    width: 150%;
+    padding-bottom: 3rem;
+}
+.search .menu .gluxner hr {
+    width: 150%;
+    margin-bottom: 3rem;
+}
+.search .menu .gluxner h2 span {
+    font-weight: 400;
+    color: #C776F9;
+    font-size: 4rem;
+}
+.urish {
+    width: 100%;
+    height: auto;
+    padding: 100px 255px;
+}
+.urish h2 {
+    font-family: Inter, arial;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 42px;
+    letter-spacing: 0px;
+}
+.urish .mard {
+    display: flex;
+    justify-content: center;
+    padding: 0 470px;
+}
+.urish .mard .anapat{
+    background: linear-gradient(360deg, rgb(16, 16, 20) 0%,rgba(13, 16, 35, 0.5) 100%);
+    position: absolute;
+    width: 75.5%;
+    height: 600px;
+    padding: 1rem 2rem 1rem 2rem;
+    display: flex;
+}
+.urish .mard :is(.anapatitext, .anapatmek) {
+    padding: 3rem 8rem;
+    position: absolute;
+    display: block;
+    border: 2px solid white; 
+    width: 630px;
+    height: 560px;
+}
+.urish .mard .anapatmek {
+    translate: 115%;
+}
+.urish .mard :is(.anapatitext, .anapatmek, h2) {
+font-family: Inter, arial;
+font-weight: 700;
+font-size: 34px;
+line-height: 42px;
+letter-spacing: 0px;
+text-align: center;
+}
+.urish .mard :is(.anapatitext, .anapatmek, p) {
+font-family: Inter, arial;
+font-weight: 400;
+letter-spacing: 0px;
+font-size: 16px;
+line-height: 30px;
+}
+.urish .mard button {
+    width: 155px;
+    height: 50px;
+    background-color: transparent;
+    border: 2px solid #B665E9;
+    cursor: pointer;
+    color: #f9f9f9;
+}
+.urish .mard h2:hover {
+    color: #B665E9;
+    cursor: pointer;
+}
+.urish .mard button:hover {
+    box-shadow: 0 0 30px #B665E9;
+}
+
+.verjin {
+    width: 100%;
+    height: auto;
+    padding: 100px 255px;
+    margin-bottom: 3rem;
+}
+.verjin .verj {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: start;
+    gap: 50px;
+    margin-bottom: 3rem;
+}
+.verjin .verj :is(.games, .marketplaces, .tools, .online, .resources, .company) {
+    width: auto;
+    height: auto;
+}
+.verjin :is(.games, .marketplaces, .tools, .online, .resources, .company) p {
+    text-align: start;
+    line-height: 2rem;
+}
+.verjin :is(.games, .marketplaces, .tools, .online, .resources, .company) p a {
+    font-family: Inter;
+    font-size: 1.2rem;
+    font-weight: 400;
+    letter-spacing: 0.28px;
+    color: rgb(170, 170, 174);
+    text-decoration-line: none;
+    -moz-text-decoration-line: none;
+}
+.verjin :is(.games, .marketplaces, .tools, .online, .resources, .company) h3 {
+    font-size: x-large;
+    color: white;
+}
+.verjin {
+    color: rgb(170, 170, 174);
+}
+.verjin a {
+    color: white;
+    text-decoration-line: none;
+    -moz-text-decoration-line: none;
+}
+
+* {
+    scroll-behavior: smooth;
+  }
